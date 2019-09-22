@@ -31,7 +31,7 @@ After this lecture, you should be able to:
 - Asymptotic notation
   - Theta, Big-O, Big-Omega
 
-## Analyzing algorithms using the RAM model
+## Analyzing Algorithms Using the RAM Model
 
 ### Insertion Sort
 
@@ -46,7 +46,7 @@ the smallest number to the left.
 
 #### Analyzing Insertion Sort
 
-In this course, we care about **relative speed**.
+In this course we care about **relative speed**.
 
 The relationship between the running time and input size.
 
@@ -57,7 +57,7 @@ The relationship between the running time and input size.
 ![Analysis of Insertion Sort](/images/analyzing-algorithms-analysis-insertion-sort.png)
 ![Analysis of Insertion Sort](/images/analyzing-algorithms-analysis-insertion-sort-2.png)
 
-## Three kinds of analyses
+## Three Kinds of Analyses
 
 ### Best/Worst/Average Case
 
@@ -73,7 +73,7 @@ being the probability that this instance occurs.
 Worst case time complexity: $W(n)=max_{1 \leq i \leq k}T_i(n)$
 
 - The **maximum** running time over all $k$ inputs of size $n$
-- It is the most important!
+- This is the most important case!
 
 #### Average case
 
@@ -87,9 +87,9 @@ Best case time complexity: $B(n)=min_{1 \leq i \leq k}T_i(n)$
 
 - The **minimum** running time over all $k$ inputs of size $n$
 
-## Asymptotic notation
+## Asymptotic Notation
 
-### Compare Algorithms Efficiencies
+### Compare Algorithm Efficiencies
 
 How do we compare two algorithms in terms of efficiency? This could be
 linear search vs. binary search.
@@ -103,7 +103,7 @@ This is called **asymptotic complexity**.
 This is the **big idea** of algorithmic analysis.
 
 The primary goal is to simplify analysis of running time by getting rid of the
-"details", which may be affected by specific implementatiion and hardware.
+"details" which may be affected by the specific implementatiion and hardware.
 
 The basic idea of asymptotic analysis is to capture the essence. Thusmore look at
 the growth of the running time with the size of the input **in the limit**, instead
@@ -111,7 +111,7 @@ of the actual running time.
 
 ### Asymptotic notation
 
-#### Theta notation $\theta$
+#### Theta Notation $\theta$
 
 It is a 2-step process:
 
@@ -133,7 +133,7 @@ How do we identify lower order terms?
 
 ![Analysis of Insertion Sort](/images/analyzing-algorithms-big-o-notation.png)
 
-#### Big-Omega notation $\Omega$
+#### Big-Omega Notation $\Omega$
 
 ![Analysis of Insertion Sort](/images/analyzing-algorithms-big-omega-notation.png)
 
@@ -142,8 +142,7 @@ How do we identify lower order terms?
 ### 3.1-1
 
 > Let $f(n)$ and $g(n)$ be asymptotically nonnegative functions.
-> Using the basic definition of $\theta$-notation, prove that
-> max\$(f(n), g(n)) = \theta(f(n) + g(n))
+> Using the basic definition of $\theta$-notation, prove that $max(f(n), g(n)) = \theta(f(n) + g(n))$
 
 $max(f(n), g(n)) = \theta(f(n) + g(n))$
 
@@ -155,9 +154,9 @@ With $c_1 = n^2$ og $c_2 = 100$
 
 Is $2^{n+1} = \mathcal{O}(2^n)$
 
-True. Note that $2^{n+1} = 2 x 2n$.
+True. Note that $2^{n+1} = 2 \times 2n$.
 
-### Asymptotic tight bounds
+### Asymptotic Tight Bounds
 
 > By getting rid of the asymptotically insignificant parts of the expressions,
 > give a simplified asymptotic tight bounds (theta notation) for the following
@@ -165,9 +164,9 @@ True. Note that $2^{n+1} = 2 x 2n$.
 
 ![Exercises](/images/analyzing-algorithms-exercise-2.png)
 
-### Extra questions
+### Extra Exercises
 
-Solve questions in this [file](/images/https://www.moodle.aau.dk/pluginfile.php/373593/mod_resource/content/1/exercises2.pdf)
+Solve the exercises in this [file](/images/https://www.moodle.aau.dk/pluginfile.php/373593/mod_resource/content/1/exercises2.pdf).
 
 #### Exercise 2.1
 
